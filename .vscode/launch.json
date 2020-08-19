@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Cortex Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${fileDirname}/../build/zephyr/zephyr.elf",
+            "serverpath": "JLinkGDBServerCLExe",
+            "servertype": "jlink",
+            "device": "nrf52840_xxaa",
+            "interface": "swd",
+            "runToMain": true
+        },
+        {
             "name": "QRCode Tests",
             "type": "cppdbg",
             "request": "launch",
